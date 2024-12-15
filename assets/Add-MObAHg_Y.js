@@ -1,0 +1,1 @@
+import{d as r,a as _,s as l,b as m,e as p,j as o,f as n,r as t,i as u}from"./index-8kLVYDKh.js";const i={class:"container"},N=r({__name:"Add",setup(d){const e=_(),{note:s}=l(e);return m(e.resetNote),(f,g)=>{const a=t("ui-back"),c=t("n-note");return u(),p("main",i,[o(a),o(c,{row:n(s),onToggle:n(e).toggleNote},null,8,["row","onToggle"])])}}});export{N as default};

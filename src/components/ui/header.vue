@@ -15,7 +15,11 @@ const canShowSave = computed(() => route.name === RN.ADD)
 const classes = computed(() => [ isValid(note.value) ?  '--primary': '--disabled' ])
 const setTitle = () => title.value = RouteTitles[route.name as RN];
 const newNote = () => router.push(toAdd());
-const saveNote = () => addNote().then(() => router.push(toNotes()))
+const saveNote = () => {
+  if (isValid(note.value)) {
+    addNote().then(() => router.push(toNotes()))
+  }
+}
 watch(() => route.name, setTitle)
 </script>
 <template>

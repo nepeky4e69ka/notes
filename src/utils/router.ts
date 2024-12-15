@@ -31,8 +31,8 @@ const routes = [
     component: () => import('@/components/pages/Note.vue'),
   },
 ];
-
-const history = createWebHistory();
+const path = process.env.NODE_ENV === 'production' ? '/notes/' : '/';
+const history = createWebHistory(path);
 export const router = createRouter({
   history,
   routes,

@@ -1,0 +1,61 @@
+.n-table{
+  font-size: 1rem;
+  border-collapse: separate;
+  margin: auto 0;
+  min-width: 100%;
+  table{
+    width: 100%;
+  }
+  th,td{
+    padding: .3rem;
+    border-radius: 3px;
+  }
+  thead{
+    color: var(--light-gray);
+    th{
+      font-size: 0.75rem;
+      text-align: center;
+      &:nth-child(2){
+        text-align: left;
+      }
+      &.-filter{
+        text-decoration: underline dashed var(--gray);
+        cursor: pointer;
+        &.-active{
+          color: var(--white);
+          text-decoration: underline dashed var(--white);
+        }
+      }
+    }
+  }
+  tbody{
+    tr{
+      &:nth-child(odd){
+        td{
+          background: var(--white-03);
+        }
+      }
+      &.--completed{
+        td{
+          background: var(--light-green-1);
+        }
+      }
+    }
+    td { 
+      text-align: center;
+      cursor: pointer;
+      svg{
+        margin-bottom: -4px;
+      }
+      &:nth-child(2){
+        text-align: left;
+        cursor: default;
+      }
+      &:first-child{
+        color: var(--light-gray);
+        font-weight: 500;
+        font-size: 0.75rem;
+      }
+    }
+  }
+}

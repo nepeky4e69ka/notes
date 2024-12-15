@@ -1,0 +1,14 @@
+header{
+  .row, .col{
+    width: 100%;
+  }
+  .col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .row{
+    height: 80px;
+    
+  }
+}

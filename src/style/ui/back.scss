@@ -1,0 +1,14 @@
+.ui-back{
+  height: 56px;
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  svg{
+    position: absolute;
+    margin: 19px 0;
+  }
+  b{
+    padding-left: 32px;
+  }
+}
